@@ -1,5 +1,5 @@
 {
-    "name": "jitendracis/exportproducts",
+    "name": "jitendracis/exportproduct",
     "type": "magento-module",
     "description": "Export products in excel file",
     "authors": [
