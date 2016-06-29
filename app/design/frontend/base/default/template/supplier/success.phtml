@@ -1,0 +1,9 @@
+<?php
+$filename = $this->getRequest()->getParam('filename');
+$file_path = Mage::getBaseUrl( Mage_Core_Model_Store::URL_TYPE_WEB, true )."excel/".$filename;
+    if(file_get_contents($file_path)){
+        echo "<script> window.open('".$file_path."','_blank'); </script>";
+    }else{
+        echo "Unabled to download.";
+    }
+?>

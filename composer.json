@@ -1,0 +1,29 @@
+{
+    "name": "jitendracis/exportproducts",
+    "type": "magento-module",
+    "description": "Export products in excel file",
+    "authors": [
+        {
+            "name": "Jitendra Mandloi",
+            "email": "jitendra.m@cisinlabs.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer":"*"
+    },
+    "extra": {
+        "magento-root-dir": "./",
+        "magento-deploystrategy": "link",
+        "map": [
+          ["./app/design/adminhtml/default/default/layout/supplier.xml", "./app/design/adminhtml/default/default/layout/supplier.xml"],
+          ["./app/design/frontend/base/default/layout/supplier.xml", "./app/design/frontend/base/default/layout/supplier.xml"],
+          ["./app/design/frontend/base/default/template/supplier", "./app/design/frontend/base/default/template/supplier"],
+          ["./app/etc/modules/Cis_Supplier.xml", "./app/etc/modules/Cis_Supplier.xml"],
+          ["./app/code/local/Cis/Supplier", "./app/code/local/Cis/Supplier"],
+          ["./lib/cis", "./lib/cis"]
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
