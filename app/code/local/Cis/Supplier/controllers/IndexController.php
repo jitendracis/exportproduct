@@ -3,7 +3,7 @@ class Cis_Supplier_IndexController extends Mage_Core_Controller_Front_Action
 {
     public function indexAction()
     {
-	if (!Mage::getStoreConfigFlag('supplier/supplier_group/enable')) {
+	if (!Mage::getStoreConfig('supplier/supplier_group/enable')) {
 		$url = Mage::getBaseUrl();
 		Mage::app()->getFrontController()->getResponse()
 						 ->setRedirect($url)
@@ -29,7 +29,7 @@ class Cis_Supplier_IndexController extends Mage_Core_Controller_Front_Action
     }
     
     public function getstockAction(){
-	if (!Mage::getStoreConfigFlag('supplier/supplier_group/enable')) {
+	if (!Mage::getStoreConfig('supplier/supplier_group/enable')) {
 	    $url = Mage::getBaseUrl();
 	    Mage::app()->getFrontController()->getResponse()
 	    ->setRedirect($url)
